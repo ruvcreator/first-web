@@ -1,3 +1,65 @@
-h1 {
-    size: 50px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.intro{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(255, 244, 231);
+}
+.schoolname{
+   font-style: italic; 
+}
+
+.buttons {
+    margin: 20px 0;
+}
+.mission{
+    text-align: left;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: color(srgb red green blue);
+    background: green;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    display: none;
+    background: yellowgreen;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.members{
+    padding: 80wpx;
+    border-radius: 10px;
+    margin: 60px;
+    background-color: rgb(255, 244, 231);
 }
