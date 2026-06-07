@@ -1,65 +1,176 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: white;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+body{
+    background: peachpuff;
+    min-height:100vh;
+    color: #64748b;
+    padding:30px;
 }
 
-.container {
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
+/* Main Container */
+.container{
+    max-width:1200px;
+    margin:auto;
 }
 
-.intro{
-    padding: 10px;
-    border-radius: 10px;
-    margin: 20px;
-    background-color: rgb(255, 244, 231);
-}
-.schoolname{
-   font-style: italic; 
-}
-
-.buttons {
-    margin: 20px 0;
-}
-.mission{
-    text-align: left;
+/* Header */
+header{
+    text-align:center;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    margin-bottom:25px;
+    box-shadow:rebeccapurplew;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 5px;
-    border: color(srgb red green blue);
+header h1{
+    color: black;
+    font-size:2.8rem;
+    margin-bottom:10px;
+}
+
+header h2{
+    color:#334155;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#64748b;
+    font-size:1.1rem;
+}
+
+/* Buttons */
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.buttons button{
+    padding:12px 24px;
+    border:none;
+    border-radius:10px;
     background: green;
     color:white;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s ease;
 }
 
-button:hover {
-    transform: scale(1.05);
+.buttons button:hover{
+    background:#14b8a6;
+    transform:translateY(-3px);
+    box-shadow:0 6px 15px rgba(20,184,166,0.4);
 }
 
-.card {
-    display: none;
-    background: yellowgreen;
-    margin-top: 30px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* Cards */
+.card{
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    animation:fadeIn .4s ease;
 }
-.members{
-    padding: 80wpx;
-    border-radius: 10px;
-    margin: 60px;
-    background-color: rgb(255, 244, 231);
+
+.card h2{
+    color:#0f766e;
+    margin-bottom:15px;
+    border-left:5px solid #0f766e;
+    padding-left:10px;
+}
+
+.card h3{
+    color:#1e293b;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+.card ul{
+    padding-left:25px;
+}
+
+.card li{
+    margin:8px 0;
+    line-height:1.6;
+}
+
+/* Contact Section */
+#contact p{
+    font-size:16px;
+    padding:8px 0;
+}
+
+/* Members */
+#members ul li{
+    background:#f1f5f9;
+    padding:10px;
+    border-radius:8px;
+    margin-bottom:8px;
+    list-style:none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0f766e;
+    border-radius:10px;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    header h2{
+        font-size:1.2rem;
+    }
+
+    .buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .buttons button{
+        width:100%;
+        max-width:300px;
+    }
+
+    .card{
+        padding:20px;
+    }
 }

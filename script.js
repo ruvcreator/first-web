@@ -1,14 +1,17 @@
-function showMission() {
-    document.getElementById("mission").style.display = "block";
-    document.getElementById("vision").style.display = "none";
-}
+function showSection(id) {
+    const cards = document.querySelectorAll(".card");
 
-function showVision() {
-    document.getElementById("vision").style.display = "block";
-    document.getElementById("mission").style.display = "none";
+    cards.forEach(card => {
+        card.style.display = "none";
+    });
+
+    document.getElementById(id).style.display = "block";
 }
 
 function hideAll() {
-    document.getElementById("mission").style.display = "none";
-    document.getElementById("vision").style.display = "none";
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        card.style.display = "none";
+    });
 }

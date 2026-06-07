@@ -1,63 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>elective2 activity proj</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College of Engineering - PLSP</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <div class="intro">
-            <h1>Welcome to
-                    <br>CARBONARA WEB</h1>
-        <p>Learn more about our Mission and Vision.</p>
-        </div>
+    <header>
+        <h1>College of Engineering</h1>
+        <h2>Pamantasan ng Lungsod ng San Pablo</h2>
+        <p>Building Future Engineers and Innovators</p>
+    </header>
 
-        <div class="buttons">
-            <button onclick="showMission()">Mission</button>
-            <button onclick="showVision()">Vision</button>
-            <button onclick="hideAll()">Hide</button>
-        </div>
-
-        <div id="mission" class="card">
-            <h2>Mission</h2>
-            <div class="mission">
-            <li>To pursue academic excellence and lifelong learning.</li> 
-            <li>To develop critical thinking, leadership, and communication skills.</li>
-            <li>To uphold integrity, respect, and social responsibility.</li>
-            <li>To use knowledge and skills to serve the community and achieve personal goals.</li>
-        </div>
-        </div>
-
-        <div id="vision" class="card">
-            <h2>Vision</h2>
-            <p>
-                To become responsible, knowledgeable, and successful individuals who contribute positively to society.
-            </p>
-        </div>
-        <div class="members">
-            <h3>MEMBERS</h3>
-                <br>
-                osuna ruven 
-                <br>
-                aliazas kenji 
-                <br>
-                ulan sofia
-                <br>
-                marfori irish 
-                <br>
-                dalwampu daniel 
-                <br>
-                hernandez mhey 
-                <br>
-                belen rancel</p>
-        </div>
-
+    <div class="buttons">
+        <button onclick="showSection('mission')">Mission</button>
+        <button onclick="showSection('vision')">Vision</button>
+        <button onclick="showSection('about')">About COE</button>
+        <button onclick="showSection('programs')">Programs</button>
+        <button onclick="showSection('contact')">Contact</button>
+        <button onclick="showSection('members')">Members</button>
+        <button onclick="hideAll()">Hide All</button>
     </div>
 
-    <script src="script.js"></script>
+    <div id="mission" class="card">
+        <h2>Mission</h2>
+        <ul>
+            <li>Provide quality engineering education.</li>
+            <li>Promote innovation and research.</li>
+            <li>Develop ethical and competent engineers.</li>
+            <li>Serve the community through technology.</li>
+        </ul>
+    </div>
+
+    <div id="vision" class="card">
+        <h2>Vision</h2>
+        <p>
+            To be a leading engineering institution producing globally competitive,
+            innovative, and socially responsible engineers.
+        </p>
+    </div>
+
+    <div id="about" class="card">
+        <h2>About the College of Engineering</h2>
+        <p>
+            The College of Engineering aims to equip students with technical
+            knowledge, practical skills, and leadership qualities necessary
+            to excel in the engineering profession.
+        </p>
+    </div>
+
+    <div id="programs" class="card">
+    <h2>Programs Offered</h2>
+
+    <h3>COLLEGE OF TEACHER EDUCATION</h3>
+    <p><strong>Grade Requirement:</strong> Not lower than 85%</p>
+    <ul>
+        <li>Bachelor in Elementary Education</li>
+        <li>Bachelor in Secondary Education
+            <ul>
+                <li>English</li>
+                <li>Filipino</li>
+                <li>Science</li>
+                <li>Social Studies</li>
+                <li>Mathematics</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>COLLEGE OF BUSINESS AND HOSPITALITY MANAGEMENT</h3>
+    <ul>
+        <li>Bachelor of Science in Hospitality Management
+            <br><em>Grade Requirement: Not lower than 83%</em>
+        </li>
+
+        <li>Bachelor of Science in Business Administration
+            <ul>
+                <li>Financial Management</li>
+                <li>Marketing Management</li>
+                <li>Human Resource Development Management</li>
+            </ul>
+        </li>
+
+        <li>Bachelor of Science in Office Administration
+            <br><em>Grade Requirement: Not lower than 80%</em>
+        </li>
+    </ul>
+
+    <h3>COLLEGE OF ARTS AND SCIENCES</h3>
+    <p><strong>Grade Requirement:</strong> Not lower than 83% (unless specified)</p>
+    <ul>
+        <li>Bachelor of Science in Psychology</li>
+        <li>Bachelor of Science in Public Administration (No required grade)</li>
+        <li>Bachelor of Arts in Political Science (No required grade)</li>
+    </ul>
+
+    <h3>COLLEGE OF ACCOUNTANCY AND ENTREPRENEURSHIP</h3>
+    <p><strong>Grade Requirement:</strong> Not lower than 88% (unless specified)</p>
+    <ul>
+        <li>Bachelor of Science in Accountancy</li>
+        <li>Bachelor of Science in Accounting Information System (85%)</li>
+        <li>Bachelor of Science in Management Accounting (85%)</li>
+        <li>Bachelor of Science in Entrepreneurship (No required grade)</li>
+    </ul>
+
+    <h3>COLLEGE OF COMPUTER STUDIES AND TECHNOLOGY</h3>
+    <p><strong>Grade Requirement:</strong> Not lower than 83%</p>
+    <ul>
+        <li>Bachelor of Science in Information Technology</li>
+        <li>Bachelor of Science in Information System</li>
+    </ul>
+
+    <h3>COLLEGE OF ENGINEERING</h3>
+    <p><strong>Grade Requirement:</strong> Not lower than 85%</p>
+    <ul>
+        <li>Bachelor of Science in Computer Engineering</li>
+    </ul>
+
+    <h3>GRADUATE SCHOOL</h3>
+    <p><em>As per DLSP Board Resolution No. 41, s. 2019</em></p>
+
+    <ul>
+        <li>Master of Arts in Education
+            <ul>
+                <li>Educational Management</li>
+                <li>English Language Education</li>
+                <li>Science and Technology</li>
+                <li>Mathematics Education</li>
+                <li>Social Studies Education</li>
+                <li>Filipino Education</li>
+            </ul>
+        </li>
+
+        <li>Master in Public Administration</li>
+        <li>Master in Business Administration</li>
+    </ul>
+</div>
+
+    <div id="contact" class="card">
+        <h2>Contact Information</h2>
+        <p>Email: engineering@plsp.edu.ph</p>
+        <p>Phone: (049) XXX-XXXX</p>
+        <p>Location: San Pablo City, Laguna</p>
+    </div>
+
+    <div id="members" class="card">
+        <h2>Project Members</h2>
+        <ul>
+            <li>Ruven Osuna</li>
+            <li>Kenji Aliazas</li>
+            <li>Sofia Ulan</li>
+            <li>Irish Marfori</li>
+            <li>Daniel Dalwampo</li>
+            <li>Mhey Hernandez</li>
+            <li>Rancell Belen</li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
